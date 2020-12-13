@@ -1,0 +1,24 @@
+{
+    "name": "@verge/my-package",
+    "version": "0.0.1",
+    "description": "📦 npm package tutorial",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "files": [
+        "index.js"
+    ],
+
+    "keywords": [
+        "npm",
+        "publish",
+        "package",
+        "registry"
+    ],
+    "author": {
+        "name": "VERGEL BARIT",
+        "email": "vergelbarit3@gmail.com"
+    },
+    "license": "MIT"
+}
