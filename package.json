@@ -1,5 +1,5 @@
 {
-    "name": "@verge/my-package",
+    "name": "vergeko-my-package",
     "version": "0.1.0",
     "description": "📦 npm package tutorial",
     "main": "index.js",

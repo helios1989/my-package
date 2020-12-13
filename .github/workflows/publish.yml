@@ -29,7 +29,7 @@ jobs:
       - name: Publish to NPMJS
         run: |
           npm config set //registry.npmjs.org/:_authToken=$NODE_AUTH_TOKEN
-          npm config set scope "rayneverge2018"
+          npm config set scope "<@OWNER>"
           npm config list
           npm publish --access public 
         env:
@@ -41,7 +41,7 @@ jobs:
         with:
           node-version: 12
           registry-url: https://npm.pkg.github.com/
-          scope: 'rayneverge2018'
+          scope: '<@OWNER>'
       - name: Publish to GitHub Package Registry
         run: npm publish
         env:
