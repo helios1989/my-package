@@ -4,7 +4,7 @@ on:
     push:
         branches:
             - "master"
-
+            
 jobs:
     release:
         name: 🚀 release
@@ -18,7 +18,6 @@ jobs:
                   node-version: 12
                   registry-url: https://registry.npmjs.org
             - name: 🚀 publish
-              run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_AUTH_TOKENS }}" > ~/.npmrc
-              run: npm publish
+              run: npm publish --access public
               env:
                   NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKENS}}
